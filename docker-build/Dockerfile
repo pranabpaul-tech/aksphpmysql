@@ -9,6 +9,6 @@
 # RUN composer install
 FROM php:7.4-apache
 RUN docker-php-ext-install mysqli
-RUN mkdir -p /var/www/html/
-COPY ./src /var/www/html/
+#RUN mkdir -p /var/www/html/
+#COPY ./src /var/www/html/
 # COPY --from=build /app /var/www/html/
